@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Froala Design Blocks - Forms</title>
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+    <link type="text/css" rel="stylesheet" href="css/froala_blocks.css">
+    <style>
+      .fdb-block {
+        border-bottom: 1px solid var(--light);
+      }
+    </style>
+  </head>
+  <body><style>
+  #navigator {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+
+  #navigator .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  }
+
+  @media (max-width: 720px) {
+    #navigator {
+      border-bottom: 1px solid #ccc;
+    }
+  }
+
+  #navigator a {
+    font-size: 14px;
+  }
+
+  #navigator+section {
+    padding: 250px 0;
+  }
+
+</style>
+
+
+<script>
+  var page = window.location.pathname.split('/')
+  page = page[page.length - 1]
+
+  var nav = document.querySelector('a[href="' + page + '"]')
+  if (nav) {
+    nav.classList.add('active')
+  }
+
+</script>
+
+    <!-- Headers 8 -->
+    <header>
+      <div class="container">
+        <nav class="navbar navbar-expand-lg justify-content-between">
+          <a class="btn btn-secondary ml-md-3" href="index.html">Home</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Forms 3 -->
+    <section class="fdb-block">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-lg-10 col-xl-12 text-center">
+            <div class="row">
+              <div class="col">
+                <h1>Add Product/Service</h1>
+                <p class="lead">One Solution for a small business</p>
+              </div>
+            </div>
+            <div class="row align-items-center">
+              <div class="col-12 col-md-4 mt-4">
+                <input type="text" class="form-control" placeholder="Product/Service name">
+              </div>
+              <div class="col-12 col-md-8 mt-4">
+                <input type="text" class="form-control" placeholder="Product/Service Description">
+              </div>
+            </div>
+            <div class="row align-items-center">
+              <div class="col">
+                <a class="btn btn-dark mt-5" href="query-info.html">Next</a>
+              </div>
+            </div> 
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Feature 5 -->
+    <section class="fdb-block">
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>Product/Service Name</th>
+            <th>Price</th>
+            <th>Action</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>John</td>
+            <td>54</td>
+            <td><input type="submit" class="btn btn-secondary" value="delete"></td>
+            <td><input type="submit" class="btn btn-primary" value="edit"></td>
+          </tr>
+          <tr>
+            <td>Mary</td>
+            <td>45</td>
+            <td><input type="submit" class="btn btn-secondary" value="delete"></td>
+            <td><input type="submit" class="btn btn-primary" value="edit"></td>
+          </tr>
+          <tr>
+            <td>July</td>
+            <td>35</td>
+            <td><input type="submit" class="btn btn-secondary" value="delete"></td>
+            <td><input type="submit" class="btn btn-primary" value="edit"></td>
+          </tr>
+        </tbody>
+      </table>    
+    </section>
+
+
+  </body>
+</html>
